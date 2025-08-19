@@ -11,7 +11,8 @@ A complete, ready-to-run pipeline that:
 
 ---
 python -m venv .venv
-# Windows: .venv\Scripts\activate
+# Windows: 
+.venv\Scripts\activate
 # macOS/Linux:
 source .venv/bin/activate
 
@@ -95,6 +96,3 @@ overlay all visuals to MP4.
   → Configurable `counting_line_y` and `direction` with guidance.
 
 ---
-## License
-
-MIT (or adapt to your needs)
