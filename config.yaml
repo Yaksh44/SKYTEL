@@ -1,0 +1,36 @@
+# Configuration for lane polygons and counting line
+# Coordinates are normalized (0..1) relative to frame width/height
+lanes:
+  # Lane 1 - left
+  - name: "Lane 1"
+    polygon:
+      - [0.05, 0.20]
+      - [0.33, 0.20]
+      - [0.40, 1.00]
+      - [0.02, 1.00]
+  # Lane 2 - middle
+  - name: "Lane 2"
+    polygon:
+      - [0.33, 0.20]
+      - [0.66, 0.20]
+      - [0.62, 1.00]
+      - [0.40, 1.00]
+  # Lane 3 - right
+  - name: "Lane 3"
+    polygon:
+      - [0.66, 0.20]
+      - [0.98, 0.20]
+      - [0.98, 1.00]
+      - [0.62, 1.00]
+# Counting line (horizontal) placed at normalized y
+counting_line_y: 0.70
+# Direction to count: "down", "up", or "both"
+direction: "down"
+# Confidence threshold for YOLO detections
+conf_threshold: 0.3
+# Classes to detect (COCO): car=2, motorcycle=3, bus=5, truck=7
+vehicle_classes: [2, 3, 5, 7]
+# Video output settings
+output_fps: null   # null = use source FPS
+output_width: null # null = keep original
+output_height: null
